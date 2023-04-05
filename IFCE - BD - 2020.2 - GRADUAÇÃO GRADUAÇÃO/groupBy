@@ -1,0 +1,24 @@
+SELECT * FROM Compras GROUP BY(data);
+
+SELECT nome,valor FROM Compras GROUP BY(valor) ORDER BY (nome);
+
+SELECT * FROM boletos GROUP BY(valor_boletos) ORDER BY (valor_boletos);
+
+SELECT valor_parcela FROM boletos GROUP BY(valor_boletos) ORDER BY (valor_boletos);
+
+SELECT parcelas FROM compras GROUP BY(parcelas);
+
+SELECT valor_parcela FROM boletos GROUP BY(valor_boletos) ORDER BY (valor_boletos);
+
+SELECT AVG(valor) FROM compras GROUP BY(Valor);
+
+SELECT valor_parcela FROM boletos GROUP BY(valor_boletos) ORDER BY (valor_boletos);
+
+SELECT * FROM compras GROUP BY(numero_parcelas) WHERE numero_parcelas>3;
+
+SELECT nome FROM boletos GROUP BY(valor_boletos) ORDER BY (valor_boletos) WHERE valor>5000;
+
+SELECT valor_parcela FROM boletos GROUP BY(valor_boletos) ORDER BY (valor_boletos);
+
+SELECT AVG(valor) FROM compras GROUP BY(id_compras) WHERE ( data > 11/12/12)AND(data<11/12/12);
+
